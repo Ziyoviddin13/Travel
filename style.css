@@ -1,0 +1,514 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #ffedd5;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ffa500;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("font/static/Nunito-Regular.ttf") format("truetype");
+}
+body {
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #333333;
+  padding: 20px 0;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar .left-navbar a {
+  font-weight: 600;
+  font-size: 28px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s linear;
+}
+header .navbar .left-navbar a span {
+  color: #ffa500;
+  transition: 0.3s linear;
+}
+header .navbar .left-navbar a:hover {
+  color: #ffa500;
+}
+header .navbar .left-navbar a:hover span {
+  color: white;
+}
+header .navbar .middle-navbar ul {
+  display: flex;
+}
+header .navbar .middle-navbar ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+header .navbar .middle-navbar ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  transition: 0.3s linear;
+}
+header .navbar .right-navbar a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s linear;
+}
+header .navbar .middle-navbar ul li a:hover {
+  color: #ffa500;
+}
+header .navbar .right-navbar a:hover {
+  color: #ffa500;
+}
+
+/*SECTION_ONE*/
+
+.section-one {
+  width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+}
+.section-one video {
+  width: 100%;
+}
+.section-one .container .general {
+  position: absolute;
+  width: 85%;
+  top: 18%;
+}
+.section-one .container .general .title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 48px;
+  color: white;
+}
+.section-one .container .general .commit {
+  text-align: center;
+  font-size: 25px;
+  margin: 20px 0;
+  color: white;
+}
+.section-one .container .general .forbtn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.section-one .container .general .forbtn .btn {
+  background-color: #ffa500;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+}
+.section-one .container .general .forbtn .btn:hover {
+  background-color: white;
+  color: #ffa500;
+}
+.section-one .container .general .box {
+  display: flex;
+  justify-content: center;
+}
+.section-one .container .general .box .next {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: black;
+  gap: 10px;
+}
+.section-one .container .general .box .next .owl {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+}
+.section-one .container .general .box .next .owl:first-child {
+  background-color: #ffa500;
+}
+
+.name,
+.name1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 5px;
+}
+.name {
+  margin-top: 100px;
+}
+.name1 {
+  margin-top: 100px;
+  margin-bottom: 144px;
+}
+.name .letter,
+.name1 .letter1 {
+  padding: 6px 16px;
+  border-radius: 5px;
+  background-color: #ffedd5;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffa500;
+}
+.name .letter:nth-child(5) {
+  margin-left: 25px;
+}
+
+.section-two {
+  margin: 50px 0 150px 0;
+}
+.section-two .dflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-two .dflex .forimg {
+  padding: 20px;
+  width: 49%;
+}
+.section-two .dflex .forimg img {
+  width: 100%;
+}
+.section-two .dflex .forform {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px darkgray;
+  width: 49%;
+  background-color: white;
+}
+.section-two .dflex .forform .question {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.section-two .dflex .forform input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid gray;
+  outline: none;
+}
+
+.section-two .dflex .forform button {
+  background-color: #ffa500;
+  color: white;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin-top: 15px;
+  border: 1px solid #ffa500;
+}
+.section-two .dflex .forform button:hover {
+  background-color: white;
+  color: #ffa500;
+  border: 1px solid #ffa500;
+}
+/*.section-two .dflex .forform input::placeholder{*/
+
+/*}*/
+
+/*SECTION_THREE*/
+
+.section-three {
+  margin-bottom: 50px;
+}
+.section-three .dflex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.section-three .dflex .box1 {
+  width: 32%;
+  overflow: hidden;
+  transition: 1s linear;
+}
+.section-three .dflex .box1:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+.section-three .dflex .box1 img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.section-three .dflex .box1 .information {
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  margin-top: -5px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 1px 1px 20px darkgrey;
+}
+
+.section-three .dflex .box1 .information .place {
+  font-weight: bold;
+}
+.section-three .dflex .box1 .information .commit {
+  margin: 12px 0 8px 0;
+}
+.section-three .dflex .box1 .information i {
+  color: #ffa500;
+}
+.section-three .dflex .box1 .information .stars i {
+  color: #ffa500;
+}
+/*.section-three .dflex .box1 .information .stars i:last-child{*/
+/*    color: white;*/
+/*    border: 1px solid #FFA500;*/
+/*}*/
+.section-three .dflex .box1 .information .del {
+  margin-top: 10px;
+}
+.section-three .dflex .box1 .information .del span {
+  font-weight: bold;
+}
+.section-three .dflex .box1 .information .del del {
+  font-size: 12px;
+}
+.section-three .dflex .box1 .information .btn {
+  background-color: #ffa500;
+  color: white;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin-top: 15px;
+  border: 1px solid #ffa500;
+}
+.section-three .dflex .box1 .information .btn:hover {
+  background-color: white;
+  color: #ffa500;
+}
+
+/*SECTION-FOUR*/
+
+.section-four {
+  margin-bottom: 50px;
+}
+.section-four .dflex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.section-four .dflex .box {
+  width: 32%;
+  text-align: center;
+  padding: 5px;
+}
+.section-four .dflex .box i {
+  color: #ffa500;
+  width: 40px;
+  font-size: 40px;
+}
+.section-four .dflex .box:hover {
+  background-color: #ffa500;
+  color: white;
+}
+.section-four .dflex .box:hover i {
+  color: white;
+}
+
+.section-four .dflex .box .title {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 8px 0 12px 0;
+}
+.section-four .dflex .box .commit {
+  font-size: 14px;
+}
+
+/*SECTION-FIVE*/
+
+.section-five {
+  margin-bottom: 50px;
+}
+.section-five .dflex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.section-five .dflex .box {
+  padding: 10px;
+  width: 32%;
+  background-color: white;
+  box-shadow: 1px 1px 20px darkgrey;
+  overflow: hidden;
+  transition: 1s linear;
+}
+.section-five .dflex .box:hover {
+  overflow: hidden;
+  transform: scale(1.1);
+}
+.section-five .dflex .box img {
+  width: 100%;
+}
+
+.grade {
+  width: 100%;
+  padding: 15px 40px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 0 20px lightgray;
+  margin-bottom: 30px;
+}
+.grade img {
+  border-radius: 50%;
+  width: 100px;
+}
+.grade .name {
+  font-weight: 600;
+  font-size: 22px;
+}
+.grade .commit {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.grade i {
+  color: #ffa500;
+}
+.grade:last-child {
+  margin-bottom: 100px;
+}
+
+.request {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.request .left-box {
+  width: 49%;
+  padding: 20px 15px;
+}
+.request .left-box img {
+  width: 100%;
+}
+.request .right-box {
+  padding: 20px 15px;
+  background-color: white;
+  border-radius: 5px;
+  width: 49%;
+  box-shadow: 1px 1px 20px darkgrey;
+}
+.request .right-box input {
+  width: 49%;
+  padding: 12px 7px;
+  background-color: #f7f7f7;
+  outline: none;
+  border: none;
+  margin-bottom: 15px;
+}
+.request .right-box input:nth-child(even) {
+  margin-left: 6px;
+}
+
+.request .right-box textarea {
+  width: 100%;
+  resize: none;
+  border: none;
+  background-color: #f7f7f7;
+  padding: 8px 5px;
+  outline: none;
+}
+.request .right-box button {
+  background-color: #ffa500;
+  color: white;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin-top: 15px;
+  border: 1px solid #ffa500;
+}
+.request .right-box button:hover {
+  background-color: white;
+  color: #ffa500;
+}
+
+.brand {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.brand a {
+  transition: 1s linear;
+}
+.brand a:hover {
+  transform: scale(1.5);
+}
+.brand img {
+  /*background-color: transparent;*/
+}
+
+footer {
+  background-color: #333333;
+  padding: 50px 0;
+}
+footer .dflex {
+  display: flex;
+  gap: 20px;
+}
+footer .dflex .box1 .title,
+.box2-1 .title {
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+}
+footer .dflex .box1 .commit {
+  line-height: 20px;
+  margin: 20px 0;
+  color: white;
+  font-size: 14px;
+}
+footer .dflex .box1 .imgdflex {
+  display: flex;
+  gap: 8px;
+}
+footer .dflex .box1 .imgdflex a {
+  text-decoration: none;
+}
+footer .box2 {
+  display: flex;
+  justify-content: space-between;
+  width: 54%;
+}
+footer .box2-1 ul li {
+  margin-top: 10px;
+  list-style: none;
+}
+footer .box2-1 ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s linear;
+  color: white;
+}
+footer .box2-1 ul li a:hover {
+  color: #ffa500;
+}
+footer .box2-1 .name {
+  margin: 25px 0 20px 0;
+}
+footer .container hr {
+  border: 1px solid #ffa500;
+  margin: 30px 0;
+  background-color: #ffa500;
+}
+footer .creatby {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+footer .creatby span {
+  color: #ffa500;
+}
